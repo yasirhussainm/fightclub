@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="asset/fonts/gotham.css">
+<link rel="stylesheet" href="asset/style.css">
+<link rel="stylesheet" href="asset/form.css">
+</head>
+<body>
+<nav>
+<ul class="navigation">
+    <li>HOME</li>
+    <li>JOIN</li>
+    <li>ABOUT</li>
+    <li>GALLERY</li>
+</ul>
+    <button class="nav-right--signup">SIGN UP</button>
+</nav>
+<div class="landing-banner">
+    <div class="headspace">
+        <div class="land-quote">
+            "Join now, if you don't care about getting hit!"
+        </div>
+        <div class="land-heading">
+            FIGHT-CLUB
+        </div> 
+    </div>
+    <div class="land-login">
+        <form class="land-login-form">
+            <h2>Get Fightin!</h2>
+            <div class="flex-center"><input type="text" name="userid" placeholder="User Id"></div>
+            <div class="flex-center"><input type="password" name="pswrd" placeholder="Password"></div>
+            <div class="flex-center"><button type="submit" onclick="check(this.form)" value="login" class="form--login">Login</button></div>
+        </form>
+    </div>
+</div>
+<div class="wrapper">
+<div class="page--heading">
+    <div class="page--heading-text">
+        <h1>Champions!</h1>
+        <p class="page--title">Our guide. Their work!</p>
+    </div>
+    <img src="asset/img/attentie-attentie-ig7vN6OkGNE-unsplash.jpg">
+    <img src="asset/img/dan-burton-ODqEpFhcfpE-unsplash.jpg" alt="">
+</div>
+<div class="page--content-list">
+    <ul class="content--cards">
+        <li><h3>De niro</h3></li>
+        <li><h3>leonardo</h3></li>
+        <li><h3>Ali</h3></li>
+        <li><h3>Bernard</h3></li>
+        <li><h3>Bradd pitt</h3></li>
+        <li><h3>Musthafa</h3></li>
+        <li><h3>Abdullah</h3></li>
+        <li><h3>Bernard</h3></li>
+        <li><h3>Ahmed</h3></li>
+        <li><h3>Joe pesci</h3></li>
+        <li><h3>Martin</h3></li>
+        <li><h3>Ali</h3></li>
+        <li><h3>Bernard</h3></li>
+        <li><h3>Bradd pitt</h3></li>
+        <li><h3>Musthafa</h3></li>
+        <li><h3>Abdullah</h3></li>
+        <li><h3>Bernard</h3></li>
+        <li><h3>Ahmed</h3></li>
+        <li><h3>De niro</h3></li>
+        <li><h3>leonardo</h3></li>
+        <li><h3>Ali</h3></li>
+        <li><h3>Bernard</h3></li>
+        <li><h3>Bradd pitt</h3></li>
+        <li><h3>Musthafa</h3></li>
+        <li><h3>Abdullah</h3></li>
+        <li><h3>Bernard</h3></li>
+        <li><h3>Ahmed</h3></li>
+    </ul>
+</div>
+</div>
+<script language="javascript">
+    function check(form) { /*function to check userid & password*/
+        /*the following code checkes whether the entered userid and password are matching*/
+        if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+            window.open('/asset/img/boxingbag.png')/*opens the target page while Id & password matches*/
+        }
+        else {
+            alert("Error Password or Username")/*displays error message*/
+        }
+    }
+</script>
+</body>
+</html>

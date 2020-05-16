@@ -1,0 +1,183 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    transition: 0.3s;
+}
+ 
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #323232;
+}
+
+nav{
+    margin: 0;
+    padding: 1.5em;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.navigation{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 1 100px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+.navigation li{
+    padding: 1em;
+    border: 3px hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    border-bottom: 2px solid #f0f0f0;
+}
+.navigation li:hover{
+    border-bottom-color: #424242;
+}
+.nav-right--signup{
+    width: 100px;
+    justify-content: flex-end;
+}
+.landing-banner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+    background-image: url(boxingbag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.headspace{
+    padding: 5%;
+}
+.land-quote{
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.land-heading{
+    font-family: "GothamPro", sans-serif;
+    color: #424242;
+    font-size: 4em;
+    font-weight: 600;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+h1, h2, h3 {
+    font-family: "GothamPro", sans-serif;
+    color: #424242;
+    text-align: center;
+    font-weight: 400;
+
+}
+.land-login{
+    display: flex;
+    height: 350px;
+    width: 300px;
+    background-color: #ececec;
+    border-radius: 10px;
+    border: 3px solid #afafaf;
+    justify-content: center;
+    align-items: center;
+    
+}
+.land-login-form{  
+    width: 100%;
+}
+.land-login-form input[type="text"], input[type="password"]{
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #afafaf;
+    height: 40px;
+    width: 80%;
+}
+input[type="text"]:hover, input[type="password"]:hover{
+    border: 0;
+}
+button{
+    border-radius: 50px;
+    background-color: #424242;
+    color: #f0f0f0;
+    height: 40px;
+    border: 0;
+    /**/
+    transition: 0.2s;
+    /**/
+}
+button:hover{
+    background-color: #f0f0f0;
+    border: 1px solid #afafaf;
+    color: #424242;
+    cursor: pointer;
+}
+.form--login{
+    width: 80%;
+}
+.wrapper{
+    display: flex;
+    margin: 0;
+    padding: 2em;
+}
+.wrapper div{
+    flex: 1;
+}
+.page--heading{
+    padding: 4em;
+    
+}
+.page--heading-text{
+    position: sticky;
+    top: 200px;
+    background-color: #fff;
+    opacity: 0.75;
+    color: #000000;
+}
+.page--heading h1{
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 3em;
+}
+.page--heading p{
+    margin-top: 0;
+    font-size: 1.3em;
+}
+img{
+    width: 100%;
+}
+.page--content-list{
+    display: flex;
+    flex-direction: column;
+}
+.content--cards{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+.content--cards li{
+    flex: auto;
+    background-color: #424242;
+    padding: 2em;
+    margin: 0.5em;
+    border-radius: 10px;
+}
+h3{
+    color: #fff;
+}
